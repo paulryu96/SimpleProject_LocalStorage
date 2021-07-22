@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/UseLocalStorage/index.css">
+    <title>Use Local Storage</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="userName" placeholder="이름을 입력하세요"/>
+        <input type="text" id="userAge" placeholder="나이를 입력하세요"/>
+        <button type="submit" id="sendUserName" onclick="saveUserName()">전송</button>
+        <button  id="showData" type="button">자료보기</button>
+        <button id="delData" onclick="delUserData()">지우기</button>
+    </form>
+    <ul id="showUserName"></ul>
+    <script src="./storage.js"></script>
+</body>
+</html>
